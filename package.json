@@ -6,12 +6,13 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "deploy": "vuepress build deploy.sh"
+    "deploy": "bash deploy.sh"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vuepress": "^1.9.10"
+    "vuepress": "^1.9.10",
+    "vuepress-theme-vdoing": "^1.12.9"
   }
 }

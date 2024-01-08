@@ -1,11 +1,10 @@
+
+
 ---
 title: typescript中泛型的使用方式
-date: 2023-12-28 19:47:59
+date: 2024-01-08 15:20:35
 tags:
 ---
-
-```javascript
-
 
 /**
  * 泛型类
