@@ -11,11 +11,11 @@ cd docs/.vuepress/dist
 # echo 'www.example.com' > CNAME
 
 git init
-git add -A
-git commit -m 'm'
+git add -add
+git commit -m 'master'
 
 # 若是发布到 https://<USERNAME>.github.io
-git push -f 项目提交地址 master
+git push -f https://github.com/lpw94/lpw94.github.io master:gh-pages
 
 # 若是发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
