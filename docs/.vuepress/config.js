@@ -1,4 +1,5 @@
 module.exports = {
+    theme: 'vdoing',
     title: '技术博客',
     description: '',
     themeConfig: {
