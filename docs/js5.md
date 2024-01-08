@@ -1,11 +1,6 @@
-
-
 ---
 title: JavaScript对象属性
-date: 2024-01-08 15:22:35
-tags:
 ---
-
 // 定义一个Person对象
 function Person(name, age) {
   this.name = name; // 姓名属性
