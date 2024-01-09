@@ -7,7 +7,7 @@ categories:
 tags:
   - 
 ---
-<img :src="$withBase('/logo.png')" alt="foo">
+<!-- <img :src="$withBase('/logo.png')" alt="foo"> -->
 <h1>基本信息</h1>
 <p></p>
 <p>姓名：woge</p>
