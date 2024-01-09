@@ -1,6 +1,7 @@
 ---
 title: 闭包函数
 ---
+```
 /**
  * 闭包函数示例
  * @param {number} num - 输入的数字
@@ -21,6 +22,7 @@ function closureFunction(num) {
 const closure = closureFunction(5);
 console.log(closure(10)); // 输出 15
 console.log(closure(-5)); // 输出 0
+```
 
 以上代码实现了一个闭包函数，函数名称为closureFunction。该函数接受一个参数num，并返回一个闭包函数。
 

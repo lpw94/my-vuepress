@@ -1,7 +1,8 @@
 ---
 title: JavaScript对象继承
 ---
-// 父类
+### 父类
+```
 class Animal {
   constructor(name) {
     this.name = name;
@@ -32,6 +33,7 @@ const dog = new Dog('Dog', 'German Shepherd');
 
 animal.speak();  // Output: Animal makes a noise.
 dog.speak();  // Output: Dog barks.
+```
 
 
 以上代码实现了JavaScript对象继承的功能。

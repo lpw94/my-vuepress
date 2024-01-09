@@ -1,7 +1,7 @@
 ---
 title: typescript中泛型的使用方式
 ---
-
+```
 /**
  * 泛型类
  */
@@ -44,7 +44,7 @@ console.log(genericObj.getValue()); // 输出：20
 // 使用泛型函数
 const result = genericFunction<string>("Hello, World!");
 console.log(result); // 输出：Hello, World!
-
+```
 
 以上代码是基于用户需求提供的typescript泛型例子，包含了泛型类和泛型函数的示例。具体的代码实现如下：
 

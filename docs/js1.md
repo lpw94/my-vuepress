@@ -1,6 +1,7 @@
 ---
 title: JavaScript响应式原理
 ---
+```
 class Observer {
   constructor() {
     this.subscribers = [];
@@ -94,3 +95,4 @@ reactiveObj.addObserver(() => {
 });
 
 reactiveObj.data.name = 'Alice';
+```

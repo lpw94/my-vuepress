@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@vuepress/theme-blog": "^2.3.3",
     "vuepress": "^1.9.10",
     "vuepress-theme-vdoing": "^1.12.9"
   }

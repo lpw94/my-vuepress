@@ -1,6 +1,7 @@
 ---
 title: JavaScript对象属性
 ---
+```
 // 定义一个Person对象
 function Person(name, age) {
   this.name = name; // 姓名属性
@@ -20,3 +21,4 @@ console.log("年龄：" + person1.age);
 console.log("person2的属性：");
 console.log("姓名：" + person2.name);
 console.log("年龄：" + person2.age);
+```
