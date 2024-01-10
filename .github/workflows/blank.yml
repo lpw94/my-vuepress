@@ -16,14 +16,8 @@ jobs:
             node-version: '12.18.3'
         - run: npm install
         - run: npm run build
-        # 部署到 GitHub Pages
-        - name: Deploy
-          uses: peaceiris/actions-gh-pages@v3
-          with:
-            personal_token: ${{ secrets.PERSONAL_TOKEN }}
-            publish_dir: docs/.vuepress/dist
-            external_repository: lpw94/lpw94.github.io
-            publish_branch: master
-            cname: woge
-            user_name: 'github-actions[bot]'
-            user_email: 'github-actions[bot]@users.noreply.github.com'
+        - run: cd docs/.vuepress/dist
+        - run: git init			
+        - run: git add -A
+        - run: git commit -m 'master'
+        - run: git push -f git@github.com:lpw94/lpw94.github.io.git master
