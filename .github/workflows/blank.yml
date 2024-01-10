@@ -32,6 +32,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
+          npm install
           npm run build
           # 进入生成的文件夹
           cd docs/.vuepress/dist
