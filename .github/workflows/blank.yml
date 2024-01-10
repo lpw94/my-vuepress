@@ -17,6 +17,9 @@ jobs:
       - name: Install and Build
         run: |
           npm install yarn
+          node -v
+          yarn -v
+          npm -v
           yarn
           yarn build
       # 部署到 GitHub Pages
