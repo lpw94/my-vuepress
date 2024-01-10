@@ -1,5 +1,5 @@
 name: VuePress Deploy
-
+ 
 on:
    push:
       branches:
@@ -10,8 +10,13 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       # 使用某个 Repo
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '12.18.3'
+          cache: 'npm'
 
       # 构建静态文件
       - name: Install and Build
