@@ -1,50 +1,32 @@
-# This is a basic workflow to help you get started with Actions
+name: VuePress Deploy
 
-name: CI
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "master" branch
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+   push:
+      branches:
+         - master
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+   build-and-deploy:
+      runs-on: ubuntu-latest
+      steps:
+      # 使用某个 Repo
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
+      # 构建静态文件
       - name: Install and Build
         run: |
           npm install yarn
-          node -v
-          npm -v
-          yarn -v
           yarn
-          yarn run build
-      # 进入生成的文件夹 部署
+          yarn build
+      # 部署到 GitHub Pages
       - name: Deploy
-        run: |
-          cd docs/.vuepress/dist
-          git init
-          git add -A
-          git commit -m 'master'
-          git push -f git@github.com:lpw94/lpw94.github.io.git master
-          
-          
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          publish_dir: docs/.vuepress/dist
+          external_repository: lpw94/lpw94.github.io
+          publish_branch: master
+          cname: woge
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'

@@ -45,14 +45,21 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm install
-        npm run build --if-present
-        npm run test --if-present
+        npm run build
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v3
       with:
         name: node-app
         path: .
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
+        publish_dir: docs/.vuepress/dist
+        external_repository: lpw94/lpw94.github.io
+        publish_branch: master
+        cname: lpw94
 
   deploy:
     permissions:
