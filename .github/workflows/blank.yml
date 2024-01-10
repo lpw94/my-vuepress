@@ -32,8 +32,9 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Install and Build
         run: |
-          npm install
-          npm run build
+          npm install yarn
+          yarn
+          yarn run build
       # 进入生成的文件夹 部署
       - name: Deploy
         run: |
