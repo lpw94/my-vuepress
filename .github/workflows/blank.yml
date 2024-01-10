@@ -33,6 +33,9 @@ jobs:
       - name: Install and Build
         run: |
           npm install yarn
+          node -v
+          npm -v
+          yarn -v
           yarn
           yarn run build
       # 进入生成的文件夹 部署
