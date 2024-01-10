@@ -14,10 +14,9 @@ jobs:
           uses: actions/setup-node@v3
           with:
             node-version: '12.18.3'
-        - run: npm install
         - run: node -v
+        - run: npm install
         - run: npm run build
-
         # 部署到 GitHub Pages
         - name: Deploy
           uses: peaceiris/actions-gh-pages@v3
