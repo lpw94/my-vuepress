@@ -30,13 +30,17 @@ jobs:
         run: echo Hello, world!
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Install and Build
         run: |
           npm install
           npm run build
-          # 进入生成的文件夹
+      # 进入生成的文件夹 部署
+      - name: Deploy
+        run: |
           cd docs/.vuepress/dist
-          git init			
+          git init
           git add -A
           git commit -m 'master'
           git push -f git@github.com:lpw94/lpw94.github.io.git master
+          
+          
