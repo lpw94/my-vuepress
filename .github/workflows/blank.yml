@@ -24,7 +24,7 @@ jobs:
             personal_token: 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
             publish_dir: docs/.vuepress/dist
             external_repository: lpw94/lpw94.github.io
-            publish_branch: main
+            publish_branch: master
             cname: woge
             user_name: 'github-actions[bot]'
             user_email: 'github-actions[bot]@lpw94.github.com'
