@@ -21,7 +21,7 @@ jobs:
         - name: Deploy
           uses: peaceiris/actions-gh-pages@v3
           with:
-            personal_token: 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
+            personal_token: ${{ secrets.PERSONAL_TOKEN }}
             publish_dir: docs/.vuepress/dist
             external_repository: lpw94/lpw94.github.io
             publish_branch: master
