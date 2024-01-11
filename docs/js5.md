@@ -22,5 +22,3 @@ console.log("person2的属性：");
 console.log("姓名：" + person2.name);
 console.log("年龄：" + person2.age);
 ```
-
-![../public/logo.png]()
