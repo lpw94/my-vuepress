@@ -4,7 +4,10 @@ module.exports = {
     charset: 'utf-8',
     description: 'ES6, JavaScript, typyscript, vue2, vue3, react, HTML技术学习。',
     themeConfig: {
-        nav: [{ text: '个人简历', link: '/my/' }]
+        nav: [
+			{ text: '首页', link: '/' },
+			{ text: '个人简历222', link: '/custom-page/' },
+		]
     },
 	pages: {
 		'/custom-page/': {
