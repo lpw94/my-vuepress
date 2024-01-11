@@ -6,13 +6,14 @@ module.exports = {
     themeConfig: {
         nav: [
 			{ text: '首页', link: '/' },
-			{ text: '个人简历222', link: '/custom-page/' },
+			{ text: '个人简介', link: '/about/' },
+			{ text: 'GitHub', link: 'https://github.com/lpw94' } // 外部链接
 		]
     },
 	pages: {
 		'/custom-page/': {
-		  title: '个人简历',
-		  content: '基本信息',
+		  title: '自定义页面',
+		  content: 'This is a custom page',
 		  frontmatter: {
 			sidebar: false
 		  }
