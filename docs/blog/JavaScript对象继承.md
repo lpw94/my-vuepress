@@ -1,7 +1,14 @@
 ---
 title: JavaScript对象继承
+date: 2024-01-08 20:03:56
+permalink: /pages/4b9ab0/
+categories:
+  - blog
+tags:
+  - 
 ---
-### 父类
+
+### JavaScript对象继承
 ```
 class Animal {
   constructor(name) {

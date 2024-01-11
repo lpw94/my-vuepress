@@ -1,6 +1,11 @@
 ---
 title: es6  Map对象
-date: 2024-01-11 15:07:01
+date: 2024-01-11 14:30:52
+permalink: /pages/379b41/
+categories:
+  - blog
+tags:
+  - 
 ---
 
 ## es6  Map对象

@@ -1,6 +1,13 @@
 ---
 title: JavaScript对象属性
+date: 2024-01-08 20:06:37
+permalink: /pages/38779d/
+categories:
+  - blog
+tags:
+  - 
 ---
+# JavaScript对象属性
 ```
 // 定义一个Person对象
 function Person(name, age) {

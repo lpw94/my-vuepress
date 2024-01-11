@@ -1,6 +1,13 @@
 ---
 title: JavaScript响应式原理
+date: 2024-01-08 19:49:40
+permalink: /pages/95e8d2/
+categories:
+  - blog
+tags:
+  - 
 ---
+# JavaScript响应式原理
 ```
 class Observer {
   constructor() {

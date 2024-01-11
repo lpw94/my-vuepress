@@ -1,6 +1,14 @@
 ---
 title: typescript中泛型的使用方式
+date: 2024-01-08 20:05:00
+permalink: /pages/edf21a/
+categories:
+  - blog
+tags:
+  - 
 ---
+
+# typescript中泛型的使用方式
 ```
 /**
  * 泛型类

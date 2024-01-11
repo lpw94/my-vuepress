@@ -1,12 +1,13 @@
 ---
-title: 个人简历
-date: 2024-01-08 10:26:06
-permalink: /pages/81fb15/
+title: README
+date: 2024-01-11 15:28:38
+permalink: /pages/947cdf/
 categories:
-  - blog
+  - about
 tags:
   - 
 ---
+
 <!-- <img :src="$withBase('/logo.png')" alt="foo"> -->
 <h1>基本信息</h1>
 <p></p>
