@@ -41,3 +41,4 @@ let isEmpty = map.size === 0;
 console.log("Map对象是否为空：" + isEmpty);
 
 ```
+以上是map 对象实例
