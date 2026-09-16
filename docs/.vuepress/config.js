@@ -5,17 +5,17 @@ module.exports = {
     description: 'ES6, JavaScript, typyscript, vue2, vue3, react, HTML技术学习。',
     themeConfig: {
         nav: [
-			{ text: '首页', link: '/' },
-			{ text: '个人简介', link: '/about/' },
-			{ text: 'GitHub', link: 'https://github.com/lpw94' } // 外部链接
-		]
+          { text: '首页', link: '/' },
+          { text: '个人简介', link: '/about/' },
+          { text: 'GitHub', link: 'https://github.com/lpw94' } // 外部链接
+        ]
     },
 	pages: {
-		'/custom-page/': {
+		'/news/': {
 		  title: '自定义页面',
 		  content: 'This is a custom page',
 		  frontmatter: {
-			sidebar: false
+			  sidebar: true
 		  }
 		}
 	},
